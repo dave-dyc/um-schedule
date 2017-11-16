@@ -1,0 +1,53 @@
+application: um-schedule
+version: 1
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  secure: always
+
+- url: /
+  static_files: index.html
+  upload: index\.html
+  secure: always
+
+- url: /fall
+  script: main.php
+  secure: always
+
+- url: /winter
+  script: main.php
+  secure: always
+
+- url: /script\.js
+  static_files: script.js
+  upload: script\.js
+  secure: always
+
+- url: /style\.css
+  static_files: style.css
+  upload: style\.css
+  secure: always
+  
+- url: /sprite\.png
+  static_files: sprite.png
+  upload: sprite\.png
+  secure: always
+  
+- url: /fall\.png
+  static_files: fall.png
+  upload: fall\.png
+  secure: always
+
+- url: /winter\.png
+  static_files: winter.png
+  upload: winter\.png
+  secure: always
+  
+- url: /.*
+  script: 404.php
+  secure: always
