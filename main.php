@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(0);
+//error_reporting(0);
 
 function output($rtn) {
     header('Content-Type: application/json');
@@ -20,7 +20,7 @@ function normalize($time) {
 }
 
 $semester = "Fall";
-if ($_SERVER['REQUEST_URI'] == '/winter')
+if ($_GET['sem'] = 'winter')
     $semester = "Winter";
 
 if (isset($_GET['id']) && isset($_GET['num'])) {
