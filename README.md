@@ -10,9 +10,6 @@ Scheduler for University of Manitoba students that pulls live data from Aurora
 
 ### 404.php
 used to redirect back to /
-    
-### app.yaml
-used to deploy this application on GAE - not required if you're not using Google App Engine
 
 ### dom.php
 used to parse raw HTML into PHP objects
