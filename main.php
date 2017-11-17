@@ -20,7 +20,7 @@ function normalize($time) {
 }
 
 $semester = "Fall";
-if ($_GET['sem'] = 'winter')
+if ($_GET['sem'] == 'winter')
     $semester = "Winter";
 
 if (isset($_GET['id']) && isset($_GET['num'])) {
